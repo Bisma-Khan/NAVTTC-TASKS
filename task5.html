@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+<title>Fixed Background Image</title>
+<style>
+    body {
+    margin: 0;
+    padding: 0;
+    font-family: Arial, sans-serif;
+    height: 2000px; /* Set a height to enable scrolling */
+  }
+  
+  .background-image {
+    background-image: url('forest.jpg'); /* Replace 'your-image.jpg' with the path to your image */
+    background-size: cover;
+    background-position: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1; /* Ensures the background image stays behind other content */
+  }
+  
+  .content {
+    padding: 20px;
+    margin-top: 100vh; /* Push content down to make space for the fixed background */
+  }
+  
+  h1 {
+    color: white;
+    text-align: center;
+  }
+
+  .content p{
+    color:white;
+    font-size: 20px;
+    line-height: 20px;
+    font-weight: thick;
+  }
+</style>
+
+</head>
+<body>
+
+<div class="background-image"></div>
+
+<div class="content">
+  <h1>Scrolling Content</h1>
+  <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed ac velit eget ipsum gravida pellentesque. Donec tristique justo non lorem ultrices, vel faucibus nisl vehicula. Nam vel lorem sed quam blandit fermentum et vel mauris. In et velit quam. Vivamus sagittis, risus nec viverra aliquet, libero mauris efficitur ligula, ut convallis nisi felis nec leo. Nulla tincidunt varius ipsum, et dapibus risus ullamcorper a. Quisque finibus consequat libero, ac malesuada mi consectetur nec.</p>
+  <p>Integer euismod, orci nec consequat volutpat, sem lacus finibus justo, non hendrerit dolor sapien et nisi. Morbi lobortis varius orci. Morbi et dapibus mi. Proin congue, dui nec feugiat rutrum, est odio hendrerit lectus, nec sodales arcu felis non nisi. Fusce finibus, dui ut tincidunt ullamcorper, nulla odio eleifend velit, nec rhoncus ligula justo id eros. Aenean pretium elit a arcu ultricies, a consequat magna vulputate. Donec a ex a metus blandit dignissim.</p>
+  <!-- Add more content here -->
+</div>
+
+</body>
+</html>

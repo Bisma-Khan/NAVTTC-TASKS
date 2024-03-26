@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Image with Border and Tooltip</title>
+<style>
+   
+
+    .container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh; 
+}
+
+.centered-image img {
+  width: 30%; 
+  height: 30%; 
+  border: 4px solid black;
+}
+
+    .image-container:hover .tooltip {
+        visibility: visible;
+    }
+    .tooltip {
+        visibility: hidden;
+        position: absolute;
+        background-color: black;
+        color: white;
+        padding: 5px;
+        border-radius: 5px;
+        bottom: 100%;
+        left: 50%;    }
+</style>
+</head>
+<body>
+
+<section>
+
+    <div class="image-container">
+       
+        
+    </div>
+    
+    <div class="container">
+        <div class="centered-image">
+            <img src="girl pic.png" alt="image" title="Image">
+            <div class="tooltip">I am an image in a webpage</div>
+        </div>
+    
+</section>
+
+</body>
+</html>

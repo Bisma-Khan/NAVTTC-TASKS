@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Image Position Change on Hover</title>
+ <style>
+    .container {
+    position: relative;
+    width: 300px; 
+    height: 300px; 
+    overflow: hidden;
+  }
+  
+  .image {
+    position: absolute;
+    top: 0;
+    left: 0;
+    transition: transform 0.5s ease;
+  }
+  
+  .container:hover .image {
+    transform: translate(50px, 50px); 
+  }
+  
+ </style>
+</head>
+<body>
+  <div class="container">
+    <img src="fiction-02.jpg" alt="Image" class="image">
+  </div>
+</body>
+</html>
