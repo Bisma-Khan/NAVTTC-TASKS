@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>JavaScript Calculator</title>
+<script>
+  // Function to perform addition
+  function addition() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var result = num1 + num2;
+    document.getElementById("result").innerHTML = "Result: " + result;
+  }
+  
+  // Function to perform multiplication
+  function multiplication() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var result = num1 * num2;
+    document.getElementById("result").innerHTML = "Result: " + result;
+  }
+  
+  // Function to perform subtraction
+  function subtraction() {
+    var num1 = parseFloat(document.getElementById("num1").value);
+    var num2 = parseFloat(document.getElementById("num2").value);
+    var result = num1 - num2;
+    document.getElementById("result").innerHTML = "Result: " + result;
+  }
+</script>
+</head>
+<body>
+  <h1>JavaScript Calculator</h1>
+  
+  <!-- Input fields for numbers -->
+  <label for="num1">Number 1:</label>
+  <input type="number" id="num1"><br><br>
+  
+  <label for="num2">Number 2:</label>
+  <input type="number" id="num2"><br><br>
+  
+  <!-- Buttons to perform operations -->
+  <button onclick="addition()">Addition</button>
+  <button onclick="multiplication()">Multiplication</button>
+  <button onclick="subtraction()">Subtraction</button>
+  
+  <!-- Display result -->
+  <p id="result"></p>
+</body>
+</html>

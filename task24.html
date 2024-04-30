@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>jQuery Show/Hide</title>
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script>
+  $(document).ready(function(){
+    // Hide the paragraph initially
+    $("p").hide();
+    
+    // Show the paragraph when "show" button is clicked
+    $("#showButton").click(function(){
+      $("p").show();
+    });
+    
+    // Hide the paragraph when "hide" button is clicked
+    $("#hideButton").click(function(){
+      $("p").hide();
+    });
+  });
+</script>
+</head>
+<body>
+  <h1> Bisma naseem</h1>
+  
+  <!-- Paragraph to show/hide -->
+  <p>This is a paragraph.</p>
+  
+  <!-- Buttons to hide/show the paragraph -->
+  <button id="hideButton">Hide</button>
+  <button id="showButton">Show</button>
+</body>
+</html>
